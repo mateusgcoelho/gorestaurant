@@ -106,6 +106,18 @@ const Dashboard: React.FC = () => {
         editingFood={editingFood}
         handleUpdateFood={handleUpdateFood}
       />
+      <Food
+        food={{
+          name: 'oi',
+          available: true,
+          description: 'oisodas',
+          id: 1,
+          image: 'oasdmsaodsa',
+          price: '24.54',
+        }}
+        handleDelete={handleDeleteFood}
+        handleEditFood={handleEditFood}
+      />
 
       <FoodsContainer data-testid="foods-list">
         {foods &&
